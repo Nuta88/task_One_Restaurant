@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>List of dishes</title>
+<meta name="description" content="Restaurant">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+	rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/restarant_style.css">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/restar.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns">
+
+
+				<table class="u-full-width">
+					<thead>
+						<tr>
+							<th class="alignHeadTab">Dish name</th>
+							<th class="alignHeadTab">Picture of dish</th>
+							<th class="alignHeadTab">Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="alignHeadTab">Capricciosa Pizza</td>
+							<td class="alignHeadTab"><img alt="pizza"
+								src="https://thewebminer.com/blog/wp-content/uploads/2015/08/pizza-1.jpg"
+								class="imgDish"></td>
+							<td class="alignHeadTab">
+								<button id="edit" type="button" class="btn-update">Update</button>
+
+								<button id="delete" type="button" class="btn-delete">Delete</button>
+
+							</td>
+						</tr>
+					</tbody>
+
+				</table>
+
+
+			</div>
+
+		</div>
+	</div>
+
+	<div id="modal_form">
+		<h3>Do you wish to change the name of the dish?</h3>
+		<form action="">
+		<div class="editCenter">
+			<input required type="text" class="inputChangeNameDish"
+				placeholder="input the name of the dish" pattern="^[a-zA-Z]+$"
+				size="50"></div>
+				<div class="editCenter"><button id="editDish" type="submit" class="btn-update">Edit</button></div>
+		</form>
+		<hr>
+		<span id="modal_close"><button type="button" class="btn-delete">Close</button></span>
+
+	</div>
+
+
+
+	<div id="overlay"></div>
+
+</body>
+</html>
