@@ -44,7 +44,7 @@ text-align: center;
 	height: 50%;
 	border-radius: 5px;
 	border: 1px #000 solid;
-	position: fixed;
+	position: fixed; 
 	top: 50%;
 	left: 30%;
 	margin-top: -150px;
